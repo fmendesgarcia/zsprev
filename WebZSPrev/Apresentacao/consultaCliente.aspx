@@ -254,12 +254,9 @@
 
                     </div>
                     <div class="modal-footer">
-
-                        <button id="btnAccessFromModal" type="button" class="btn btn-primary"  onclick="alterar();">Acessar</button>
-
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-
                         <button id="btnGravaCliente" type="button" class="btn btn-primary" onclick="alterar_cliente();">Gravar</button>
+                        <button id="btnAccessFromModal" type="button" class="btn btn-primary"  onclick="alterar();">Acessar</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                     </div>
                 </div>
             </div>
