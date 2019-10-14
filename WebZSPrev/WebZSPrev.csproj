@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{667C2415-1120-4920-B78A-EBB09359C2D0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebZSPrev</RootNamespace>
+    <AssemblyName>WebZSPrev</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=4.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.1.1\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Apresentacao\administracaoConsulta.aspx" />
+    <Content Include="Apresentacao\administracaoConsultaUser.aspx" />
+    <Content Include="Apresentacao\administracaoMenu.aspx" />
+    <Content Include="Apresentacao\administracaoCad.aspx" />
+    <Content Include="Apresentacao\administracaoUser.aspx" />
+    <Content Include="Apresentacao\cadCliente.aspx" />
+    <Content Include="Apresentacao\cadCompromisso.aspx" />
+    <Content Include="Apresentacao\consultaCliente.aspx" />
+    <Content Include="Apresentacao\css\bootstrap.css" />
+    <Content Include="Apresentacao\cadDocumento.aspx" />
+    <Content Include="Apresentacao\css\buttons\buttons.bootstrap.css" />
+    <Content Include="Apresentacao\css\buttons\buttons.bootstrap.min.css" />
+    <Content Include="Apresentacao\css\buttons\buttons.bootstrap4.css" />
+    <Content Include="Apresentacao\css\buttons\buttons.bootstrap4.min.css" />
+    <Content Include="Apresentacao\css\buttons\buttons.dataTables.css" />
+    <Content Include="Apresentacao\css\buttons\buttons.dataTables.min.css" />
+    <Content Include="Apresentacao\css\buttons\buttons.foundation.css" />
+    <Content Include="Apresentacao\css\buttons\buttons.foundation.min.css" />
+    <Content Include="Apresentacao\css\buttons\buttons.jqueryui.css" />
+    <Content Include="Apresentacao\css\buttons\buttons.jqueryui.min.css" />
+    <Content Include="Apresentacao\css\buttons\buttons.semanticui.css" />
+    <Content Include="Apresentacao\css\buttons\buttons.semanticui.min.css" />
+    <Content Include="Apresentacao\css\select\select.bootstrap.css" />
+    <Content Include="Apresentacao\css\select\select.bootstrap.min.css" />
+    <Content Include="Apresentacao\css\select\select.bootstrap4.css" />
+    <Content Include="Apresentacao\css\select\select.bootstrap4.min.css" />
+    <Content Include="Apresentacao\css\select\select.dataTables.css" />
+    <Content Include="Apresentacao\css\select\select.dataTables.min.css" />
+    <Content Include="Apresentacao\css\select\select.foundation.css" />
+    <Content Include="Apresentacao\css\select\select.foundation.min.css" />
+    <Content Include="Apresentacao\css\select\select.jqueryui.css" />
+    <Content Include="Apresentacao\css\select\select.jqueryui.min.css" />
+    <Content Include="Apresentacao\css\select\select.semanticui.css" />
+    <Content Include="Apresentacao\css\select\select.semanticui.min.css" />
+    <Content Include="Apresentacao\imgs\ajax-loader.gif" />
+    <Content Include="Apresentacao\imgs\check.png" />
+    <Content Include="Apresentacao\imgs\desligar.jpeg" />
+    <Content Include="Apresentacao\imgs\iq.png" />
+    <Content Include="Apresentacao\imgs\logo.JPG" />
+    <Content Include="Apresentacao\imgs\logo1.JPG" />
+    <Content Include="Apresentacao\imgs\logo2.JPG" />
+    <Content Include="Apresentacao\imgs\LOGOO.JPG" />
+    <Content Include="Apresentacao\imgs\preloader.gif" />
+    <Content Include="Apresentacao\imgs\robot-3.png" />
+    <Content Include="Apresentacao\importacao.aspx" />
+    <Content Include="Apresentacao\index.aspx" />
+    <Content Include="Apresentacao\js\bootstrap.js" />
+    <Content Include="Apresentacao\css\dataTables.bootstrap.css" />
+    <Content Include="Apresentacao\js\buttons\buttons.bootstrap.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.bootstrap.min.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.bootstrap4.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.bootstrap4.min.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.colVis.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.colVis.min.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.flash.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.flash.min.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.foundation.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.foundation.min.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.html5.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.html5.min.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.jqueryui.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.jqueryui.min.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.print.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.print.min.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.semanticui.js" />
+    <Content Include="Apresentacao\js\buttons\buttons.semanticui.min.js" />
+    <Content Include="Apresentacao\js\buttons\dataTables.buttons.js" />
+    <Content Include="Apresentacao\js\buttons\dataTables.buttons.min.js" />
+    <Content Include="Apresentacao\js\dataTables.bootstrap.js" />
+    <Content Include="Apresentacao\css\dataTables.responsive.css" />
+    <Content Include="Apresentacao\js\dataTables.responsive.js" />
+    <Content Include="Apresentacao\css\font-awesome.min.css" />
+    <Content Include="Apresentacao\js\jquery.dataTables.min.js" />
+    <Content Include="Apresentacao\js\jquery.mask.js" />
+    <Content Include="Apresentacao\js\jquery.min.js" />
+    <Content Include="Apresentacao\css\menu.css" />
+    <Content Include="Apresentacao\css\metisMenu.min.css" />
+    <Content Include="Apresentacao\js\metisMenu.min.js" />
+    <Content Include="Apresentacao\js\raphael.js" />
+    <Content Include="Apresentacao\css\sb-admin-2.css" />
+    <Content Include="Apresentacao\js\sb-admin-2.js" />
+    <Content Include="Apresentacao\js\script.js" />
+    <Content Include="Apresentacao\js\select\dataTables.select.js" />
+    <Content Include="Apresentacao\js\select\dataTables.select.min.js" />
+    <Content Include="Apresentacao\login.aspx" />
+    <Content Include="Apresentacao\requests.aspx" />
+    <Content Include="Apresentacao\SitesExternos.aspx" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Apresentacao\View.Master" />
+    <Content Include="Apresentacao\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Apresentacao\fonts\fontawesome-webfont.eot" />
+    <Content Include="Apresentacao\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Apresentacao\fonts\fontawesome-webfont.woff" />
+    <Content Include="Apresentacao\fonts\FontAwesome.otf" />
+    <Content Include="Apresentacao\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Apresentacao\ClientesDataHandler.ashx" />
+    <Content Include="Apresentacao\manterSessao.ashx" />
+    <Content Include="Apresentacao\css\buttons\common.scss" />
+    <Content Include="Apresentacao\css\buttons\mixins.scss" />
+    <None Include="Properties\PublishProfiles\WebZPrev.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcessaDados\AcessaDadosMySql.cs" />
+    <Compile Include="AcessaDados\AcessaDadosSqlServer.cs" />
+    <Compile Include="Apresentacao\administracaoConsulta.aspx.cs">
+      <DependentUpon>administracaoConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\administracaoConsulta.aspx.designer.cs">
+      <DependentUpon>administracaoConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\administracaoConsultaUser.aspx.cs">
+      <DependentUpon>administracaoConsultaUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\administracaoConsultaUser.aspx.designer.cs">
+      <DependentUpon>administracaoConsultaUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\administracaoMenu.aspx.cs">
+      <DependentUpon>administracaoMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\administracaoMenu.aspx.designer.cs">
+      <DependentUpon>administracaoMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\administracaoCad.aspx.cs">
+      <DependentUpon>administracaoCad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\administracaoCad.aspx.designer.cs">
+      <DependentUpon>administracaoCad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\administracaoUser.aspx.cs">
+      <DependentUpon>administracaoUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\administracaoUser.aspx.designer.cs">
+      <DependentUpon>administracaoUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\cadCliente.aspx.cs">
+      <DependentUpon>cadCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\cadCliente.aspx.designer.cs">
+      <DependentUpon>cadCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\cadCompromisso.aspx.cs">
+      <DependentUpon>cadCompromisso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\cadCompromisso.aspx.designer.cs">
+      <DependentUpon>cadCompromisso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\ClientesDataHandler.ashx.cs">
+      <DependentUpon>ClientesDataHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\consultaCliente.aspx.cs">
+      <DependentUpon>consultaCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\consultaCliente.aspx.designer.cs">
+      <DependentUpon>consultaCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\cadDocumento.aspx.cs">
+      <DependentUpon>cadDocumento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\cadDocumento.aspx.designer.cs">
+      <DependentUpon>cadDocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\importacao.aspx.cs">
+      <DependentUpon>importacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\importacao.aspx.designer.cs">
+      <DependentUpon>importacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\manterSessao.ashx.cs">
+      <DependentUpon>manterSessao.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\requests.aspx.cs">
+      <DependentUpon>requests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\requests.aspx.designer.cs">
+      <DependentUpon>requests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\SitesExternos.aspx.cs">
+      <DependentUpon>SitesExternos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\SitesExternos.aspx.designer.cs">
+      <DependentUpon>SitesExternos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\View.Master.cs">
+      <DependentUpon>View.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\View.Master.designer.cs">
+      <DependentUpon>View.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ObjetoTransferencia\Aps.cs" />
+    <Compile Include="ObjetoTransferencia\Cliente.cs" />
+    <Compile Include="ObjetoTransferencia\ClienteTable.cs" />
+    <Compile Include="ObjetoTransferencia\Comarca.cs" />
+    <Compile Include="ObjetoTransferencia\Compromisso.cs" />
+    <Compile Include="ObjetoTransferencia\Contato.cs" />
+    <Compile Include="ObjetoTransferencia\Documento.cs" />
+    <Compile Include="ObjetoTransferencia\Endereco.cs" />
+    <Compile Include="ObjetoTransferencia\Especie.cs" />
+    <Compile Include="ObjetoTransferencia\Importacao.cs" />
+    <Compile Include="ObjetoTransferencia\Motivo.cs" />
+    <Compile Include="ObjetoTransferencia\Movimentacao.cs" />
+    <Compile Include="ObjetoTransferencia\Notificacao.cs" />
+    <Compile Include="ObjetoTransferencia\Obs.cs" />
+    <Compile Include="ObjetoTransferencia\Permissao.cs" />
+    <Compile Include="ObjetoTransferencia\Responsavel.cs" />
+    <Compile Include="ObjetoTransferencia\SituacaoBeneficio.cs" />
+    <Compile Include="ObjetoTransferencia\Status.cs" />
+    <Compile Include="ObjetoTransferencia\StatusCompromisso.cs" />
+    <Compile Include="ObjetoTransferencia\StatusPasta.cs" />
+    <Compile Include="ObjetoTransferencia\TipoCli.cs" />
+    <Compile Include="ObjetoTransferencia\TipoCompromisso.cs" />
+    <Compile Include="ObjetoTransferencia\TipoDoc.cs" />
+    <Compile Include="ObjetoTransferencia\TipoMovimentacao.cs" />
+    <Compile Include="ObjetoTransferencia\UF.cs" />
+    <Compile Include="ObjetoTransferencia\WsInfoqualy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documentos\" />
+    <Folder Include="Negocio\" />
+    <Folder Include="PlanilhasImportadas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49687</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59507/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

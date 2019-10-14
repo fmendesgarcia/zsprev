@@ -1,0 +1,337 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="View.master.cs" Inherits="WebZSPrev.Apresentacao.View" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/metisMenu.min.css" rel="stylesheet" />
+    <link href="css/sb-admin-2.css" rel="stylesheet" />
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="css/dataTables.responsive.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+
+    <link href="css/buttons/buttons.dataTables.css" rel="stylesheet" />
+    <link href="css/buttons/buttons.bootstrap.css" rel="stylesheet" />
+    <link href="css/buttons/buttons.bootstrap.min.css" rel="stylesheet" />
+
+    <link href="css/select/select.bootstrap.css" rel="stylesheet" />
+    <link href="css/select/select.bootstrap.min.css" rel="stylesheet" />
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+
+
+        // Coloquei esse código para tentar manter a sessão que estava expirando...
+        // Agora faz a requisição "falsa" de 1 em 1 minutos ao server. 
+        window.onload = function () {
+            setInterval("manterSessao()", 60000);
+        }
+
+        function manterSessao() {
+            url = "manterSessao.ashx?";
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", url, true);
+            xmlHttp.send();
+        }
+
+    </script>
+
+    <style>
+
+
+        .icone_infoqualy{
+            border: 0px;
+            width: 15px;
+            height: 15px;
+            float: right;
+        }
+
+        table.minimalistBlack {
+            border: 3px solid #000000;
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+            table.minimalistBlack td, table.minimalistBlack th {
+                border: 1px solid #000000;
+                padding: 5px 4px;
+            }
+
+            table.minimalistBlack tbody td {
+                font-size: 13px;
+            }
+
+            table.minimalistBlack thead {
+                background: #CFCFCF;
+                background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+                background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+                background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+                border-bottom: 3px solid #000000;
+            }
+
+                table.minimalistBlack thead th {
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #000000;
+                    text-align: left;
+                }
+
+            table.minimalistBlack tfoot {
+                font-size: 14px;
+                font-weight: bold;
+                color: #000000;
+                border-top: 3px solid #000000;
+            }
+
+                table.minimalistBlack tfoot td {
+                    font-size: 14px;
+                }
+    </style>
+
+
+
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin: 15px">
+    <form id="form1" runat="server">
+
+        <div id="wrapper">
+
+            <div style="padding: 0px; background-color: #1e292d; width: 100%;" id="cabec">
+                <img src="imgs/logo1.JPG" />
+                <img src="imgs/logo2.JPG" style="display: block; margin: 5px;" />
+            </div>
+
+
+
+
+            <!-- /.navbar-top-links -->
+
+
+            <!-- fmendes: botar menu aqui em baixo-->
+
+            <div class="col-lg-12" style="padding: 0px; font-size: 16px" id="menu_horizontal">
+
+                <nav class="navbar navbar-light" style="border-bottom: 1px solid #d6d3d3; background-color: #ffffff; border-top: 1px solid #d6d3d3;">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar">l</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+
+                        <div id="menu_server" runat="server"></div>
+
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+
+                <%--  <nav id="menu-wrap">
+                    <ul id="menu">
+                        <li><a href="index.aspx">INÍCIO</a></li>
+                        <li><a href="importacao.aspx">IMPORTAR</a></li>
+
+                        <li>
+                            <a href="consultacliente.aspx">CONSULTAR</a>
+                        </li>
+
+                        <li>
+                            <a onclick="limpa_obj();" href="cadcliente.aspx">INCLUIR</a>
+                        </li>
+                        <li>
+                            <a href="administracaoMenu.aspx">ADMINISTRAÇÃO</a>
+                            <ul>
+
+                                <li>
+                                    <a href="">Work 1</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Work 11</a>
+                                            <ul>
+                                                <li><a href="">Work 111</a></li>
+                                                <li><a href="">Work 112</a></li>
+
+                                                <li><a href="">Work 113</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Work 12</a>
+                                            <ul>
+                                                <li><a href="">Work 121</a></li>
+                                                <li><a href="">Work 122</a></li>
+
+                                                <li><a href="">Work 123</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Work 13</a>
+                                            <ul>
+                                                <li><a href="">Work 131</a></li>
+                                                <li><a href="">Work 132</a></li>
+
+                                                <li><a href="">Work 133</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Work 2</a>
+                                    <ul>
+                                        <li>
+
+                                            <a href="">Work 21</a>
+                                            <ul>
+                                                <li><a href="">Work 211</a></li>
+                                                <li><a href="">Work 212</a></li>
+                                                <li><a href="">Work 213</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a href="">Work 22</a>
+                                            <ul>
+                                                <li><a href="">Work 221</a></li>
+                                                <li><a href="">Work 222</a></li>
+                                                <li><a href="">Work 223</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a href="">Work 23</a>
+                                            <ul>
+                                                <li><a href="">Work 231</a></li>
+                                                <li><a href="">Work 232</a></li>
+                                                <li><a href="">Work 233</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Work 3</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Work 31</a>
+                                            <ul>
+
+                                                <li><a href="">Work 311</a></li>
+                                                <li><a href="">Work 312</a></li>
+                                                <li><a href="">Work 313</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Work 32</a>
+
+                                            <ul>
+                                                <li><a href="">Work 321</a></li>
+                                                <li><a href="">Work 322</a></li>
+                                                <li><a href="">Work 323</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Work 33</a>
+
+                                            <ul>
+                                                <li><a href="">Work 331</a></li>
+                                                <li><a href="">Work 332</a></li>
+                                                <li><a href="">Work 333</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>--%>
+            </div>
+
+
+
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+
+
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/dataTables.bootstrap.js"></script>
+        <script src="js/dataTables.responsive.js"></script>
+        <script src="js/sb-admin-2.js"></script>
+        <script src="js/metisMenu.min.js"></script>
+        <script src="js/raphael.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/jquery.mask.js"></script>
+
+        <script src="js/select/dataTables.select.js"></script>
+        <script src="js/buttons/buttons.bootstrap.js"></script>
+        <script src="js/buttons/dataTables.buttons.js"></script>
+
+
+        <script>
+
+            $('.date').mask('00/00/0000');
+            $('.cpf').mask('000.000.000-00');
+            $('.nbeneficio').mask('00/000.000.000-0');
+            $('.telefone').mask('0000-00000');
+            $('.cep').mask('00000-000');
+
+
+
+
+            function active_no_clicado(clicado) {
+                // limpa todos
+                var lis = document.getElementById("itens_menu").getElementsByTagName("li");
+
+                for (var i = 0; i < lis.length; i++) {
+                    lis[i].className = '';
+                }
+
+                var liPai = clicado.parentElement;
+                liPai.className = 'active';
+
+                geral.DeleteObjFromWebStorage("_obj");
+
+
+            }
+
+            function sair() {
+                try {
+                    geral.DeleteObjFromWebStorage("_obj");
+                }
+                catch (ex) {
+
+                }
+
+
+
+            }
+
+        </script>
+
+    </form>
+</body>
+</html>

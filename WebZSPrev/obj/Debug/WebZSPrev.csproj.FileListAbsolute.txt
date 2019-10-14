@@ -1,0 +1,73 @@
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\ApplicationInsights.config
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\roslyn\csc.exe
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\roslyn\vbc.exe
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\roslyn\VBCSCompiler.exe
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\WebZSPrev.dll.config
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\WebZSPrev.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\WebZSPrev.pdb
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.AI.Web.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\MySql.Data.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.AI.Web.xml
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\bin\MySql.Data.xml
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\obj\Debug\WebZSPrev.csprojResolveAssemblyReference.cache
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\obj\Debug\WebZSPrev.dll
+C:\Users\Felipe Garcia\Desktop\zsprev\WebZSPrev\WebZSPrev\obj\Debug\WebZSPrev.pdb
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\ApplicationInsights.config
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\roslyn\csc.exe
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\roslyn\vbc.exe
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\roslyn\VBCSCompiler.exe
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\WebZSPrev.dll.config
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\WebZSPrev.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\WebZSPrev.pdb
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.AI.Web.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.ApplicationInsights.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\MySql.Data.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Newtonsoft.Json.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.AI.Web.xml
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.ApplicationInsights.xml
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\MySql.Data.xml
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\bin\Newtonsoft.Json.xml
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\obj\Debug\WebZSPrev.dll
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\obj\Debug\WebZSPrev.pdb
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\obj\Debug\WebZSPrev.Properties.Resources.resources
+C:\Users\FELIPE\Documents\Visual Studio 2015\Projects\WebZSPrev\WebZSPrev\obj\Debug\WebZSPrev.csproj.GenerateResource.Cache
