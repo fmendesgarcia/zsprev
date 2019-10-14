@@ -254,7 +254,11 @@
 
                     </div>
                     <div class="modal-footer">
+
+                        <button id="btnAccessFromModal" type="button" class="btn btn-primary"  onclick="alterar();">Acessar</button>
+
                         <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+
                         <button id="btnGravaCliente" type="button" class="btn btn-primary" onclick="alterar_cliente();">Gravar</button>
                     </div>
                 </div>
@@ -958,6 +962,11 @@
 
 
         var G_ID;
+
+  
+
+
+
         function alterar(id) {
 
             var obj = {
@@ -1037,10 +1046,6 @@
 
         function alterar_aqui(id) {
 
-
-
-
-
             // inicio teste se todos os combos foram carregados.
             var qtd1 = $("#mspanStatusPasta option").length;
             var qtd2 = $("#ContentPlaceHolder1_mspanEspecie option").length;
@@ -1049,9 +1054,6 @@
             var qtd5 = $("#ContentPlaceHolder1_mspanResponsavel option").length;
             var qtd6 = $("#mspanMotivo option").length;
             var qtd7 = $("#mspanSituacaoBeneficio option").length;
-
-
-
 
 
             if (qtd1 <= 1 || qtd2 <= 1 || qtd3 <= 1 || qtd4 <= 1 || qtd5 <= 1 || qtd6 <= 1 || qtd7 <= 1) {
@@ -1082,6 +1084,10 @@
                         retorno[0].id_aps == null ? $("#ContentPlaceHolder1_mspanAps option:contains('Selecione')").attr('selected', 'selected') : $("#ContentPlaceHolder1_mspanAps").val(retorno[0].id_aps);
                         retorno[0].id_especie == null ? $("#ContentPlaceHolder1_mspanEspecie option:contains('Selecione')").attr('selected', 'selected') : $("#ContentPlaceHolder1_mspanEspecie").val(retorno[0].id_especie);
                         retorno[0].id_situacao_beneficio == null ? $("#mspanSituacaoBeneficio option:contains('Selecione')").attr('selected', 'selected') : $("#mspanSituacaoBeneficio").val(retorno[0].id_situacao_beneficio);
+
+                        // seta id cliente no campo acesso rapido.:
+                        document.getElementById("btnAccessFromModal").setAttribute('onclick', 'alterar(' + id + ');');
+
                         // Abre o modal:
                         $("#modalCliente").modal('show');
                         //geral.AbrirModal('modalCliente');

@@ -150,3 +150,15 @@ C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\obj\Release\WebZSPre
 C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\obj\Release\WebZSPrev.csproj.CopyComplete
 C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\obj\Release\WebZSPrev.dll
 C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\obj\Release\WebZSPrev.pdb
+C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\bin\roslyn\csc.exe
+C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\bin\roslyn\vbc.exe
+C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\bin\roslyn\VBCSCompiler.exe
+C:\Users\fmwon\Documents\Projetos Pessoais\zsprev\WebZSPrev\bin\roslyn\VBCSCompiler.exe.config
